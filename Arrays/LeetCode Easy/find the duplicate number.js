@@ -1,11 +1,22 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+
+//Link: https://leetcode.com/problems/find-the-duplicate-number/
+
+//Time Complexity: O(nLog(n))
+//Space Complexity: O(1)
+
 const findDuplicate = function (nums) {
-  const numsSet = new Set(nums);
-  if (numsSet.size !== nums.length) {
+  nums.sort((a, b) => {
+    return a - b;
+  });
+
+  for (let element of nums) {
+    if (element === nums[nums.indexOf(element) + 1]) return element;
   }
 };
 
-// findDuplicate([1, 3, 4, 2, 2]);
-findDuplicate([3, 1, 3, 4, 2]);
-
-// Javascript code to find
-// duplicates in O(n) time
+//Runtime: 8597 ms, faster than 5.03% of JavaScript online submissions for Find the Duplicate Number.
+//Memory Usage: 54.1 MB, less than 43.51% of JavaScript online submissions for Find the Duplicate Number.
