@@ -1,2 +1,4 @@
-# Tip-302
-This Repo is focus in solution to Data Structure and Algorithm questions in LeetCode
+# Tip-302 Array Solution
+This section is dedicated to Array solution of LeetCodes, you're welcome to contribute.
+
+Please ensure to read the description on main page and the pattern when answering questions. Thanks. 
