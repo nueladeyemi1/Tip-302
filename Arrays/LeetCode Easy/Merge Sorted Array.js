@@ -22,7 +22,7 @@ const merge = function (nums1, m, nums2, n) {
 
 //ALTERNATIVE
 
-const merge = function (nums1, m, nums2, n) {
+const merge1 = function (nums1, m, nums2, n) {
   if (m === 0 && nums1.length === 1) nums1.splice(0, 1);
   for (let i = nums1.length - 1; i >= m; i--) {
     if (nums1[i] === 0) {
@@ -47,7 +47,7 @@ const merge = function (nums1, m, nums2, n) {
 
 //ALTERNATIVE
 
-const merge = function (nums1, m, nums2, n) {
+const merge2 = function (nums1, m, nums2, n) {
   if (m === 0 && nums1.length === 1) nums1.splice(0, 1);
   for (let i = nums1.length - 1; i >= m; i--) {
     if (nums1[i] === 0) {
