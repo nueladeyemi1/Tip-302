@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-//Link: https://leetcode.com/problems/two-sum/
+//Link: https://leetcode.com/problems/majority-element/
 
 //Time Complexity: O(nLog(n))
 //Space Complexity: O(1)
