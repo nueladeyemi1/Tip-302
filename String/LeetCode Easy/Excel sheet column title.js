@@ -28,16 +28,20 @@ const convertToTitle = function (columnNumber) {
     26: 'Z',
   };
 
-  if (examples[columnNumber] && columnNumber.length <= 2) {
+  const objectLength = Object.keys(examples).length;
+
+  if (columnNumber <= objectLength) {
     console.log(examples[columnNumber]);
+  } else if (columnNumber > objectLength) {
+    console.log(
+      `${examples[columnNumber]}${examples[columnNumber - objectLength]}`
+    );
   }
 
-  //   const objectLength = Object.keys(examples).length;
-  //   console.log(objectLength);
   //   for (let i = 1; i < objectLength; i++) {
   // console.log(`${examples[columnNumber[i]]}${examples[columnNumber[i]]}`);
   // if(examples[i])
   //   }
 };
 
-// convertToTitle('28');
+convertToTitle('79');
