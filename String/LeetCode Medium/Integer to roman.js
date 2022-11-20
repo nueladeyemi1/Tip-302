@@ -1,22 +1,49 @@
+/**
+ * @param {number} num
+ * @return {string}
+ */
+
+//Link: https://leetcode.com/problems/integer-to-roman
+
+//Time Complexity: O(log(n))
+//Space Complexity: O(1)
+
 const intToRoman = function (num) {
-  const representation = {
-    1: 'I',
-    5: 'V',
-    10: 'X',
-    50: 'L',
-    100: 'C',
-    500: 'D',
-    1000: 'M',
-  };
+  const intRepresentation = [
+    1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1,
+  ];
 
-  console.log(representation[num]);
+  const romanRepresentation = [
+    'M',
+    'CM',
+    'D',
+    'CD',
+    'C',
+    'XC',
+    'L',
+    'XL',
+    'X',
+    'IX',
+    'V',
+    'IV',
+    'I',
+  ];
 
-  const length = Object.keys(representation);
+  let output = '';
 
-  console.log(length);
-  for (let i = 0; i < length; i++) {
-    // console.log(representation.num);
+  let i = 0;
+  while (num !== 0) {
+    if (num >= intRepresentation[i]) {
+      num -= intRepresentation[i];
+      output += romanRepresentation[i];
+      continue;
+    }
+    i++;
   }
+  return output;
 };
+
+//Runtime: 242 ms, faster than 28.40% of JavaScript online submissions for Integer to Roman.
+//Memory Usage: 47.5 MB, less than 63.02% of JavaScript online submissions for Integer to Roman.
 
 intToRoman(3);
