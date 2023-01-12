@@ -2,6 +2,8 @@
  * @param {string} s
  * @return {character}
  */
+
+//CHECK "FirstLetterToAppearImg" IN Img FOLDER FOR THE RUNTIME AND MEMORY
 const majorityElement = function(nums) {
   const theMap = {};
 
@@ -15,11 +17,11 @@ const majorityElement = function(nums) {
 
   for (let key of Object.keys(theMap)) {
     if (theMap[key] >= nums.length / 2) {
-      console.log(theMap[[key]]);
+      return key;
     }
   }
-
-  console.log(theMap);
 };
 
-majorityElement([2, 2, 1, 1, 1, 2, 2]);
+// majorityElement([4, 1, 1]);
+
+// majorityElement([2, 2, 1, 1, 1, 2, 2]);
