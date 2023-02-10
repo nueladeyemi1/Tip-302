@@ -10,3 +10,4 @@ function moveZero(arr) {
 }
 
 moveZero([2, 4, 0, 3, 0, 1, 0]);
+moveZero([0, 0, 2, 3, 0, 1, 0]);
