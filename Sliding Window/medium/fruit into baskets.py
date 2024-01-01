@@ -19,3 +19,7 @@ def totalFruit(fruits):
 
 
 totalFruit([1,2,1])
+
+
+# Runtime: 693 ms, faster than 84.31% of Python3 online submissions for Fruit Into Baskets.
+# Memory Usage: 24.6 MB, less than 18.65% of Python3 online submissions for Fruit Into Baskets.
