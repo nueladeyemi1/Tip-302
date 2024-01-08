@@ -1,5 +1,5 @@
 class Solution:
-    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+    def uncommonFromSentences(s1, s2):
         s1_array = s1.split(' ')
         s2_array = s2.split(' ')
         collector = []
